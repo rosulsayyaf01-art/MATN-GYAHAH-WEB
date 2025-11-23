@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Ghayah wa At-Taqrib | Interactive Reader</title>
+    <meta name="description" content="Ruang baca interaktif Matan Al-Ghayah wa At-Taqrib - Fiqh Syafi'i">
+    <meta name="author" content="rslsyyf">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="brand-icon">✦</span> AL-GHAYAH
+        </div>
+        <div class="nav-links">
+            <button id="theme-toggle" class="nav-btn" title="Coming Soon: Dark Mode">☾</button>
+            <button onclick="openAbout()" class="nav-btn">About Us</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">Daftar Kitab</div>
+            <ul id="chapter-list">
+                <li class="active">Kitab At-Thaharah</li>
+                <li class="locked">Kitab As-Shalah (Soon)</li>
+                <li class="locked">Kitab Az-Zakah (Soon)</li>
+            </ul>
+        </aside>
+
+        <section class="reading-area">
+            <header class="book-header">
+                <h1>Matan Al-Ghayah wa At-Taqrib</h1>
+                <p class="subtitle">Al-Qadi Abu Syuja' Ahmad bin Al-Husain</p>
+                <div class="divider">✻</div>
+            </header>
+
+            <div id="content-wrapper"></div>
+
+            <div class="end-mark">
+                <p>End of Kitab At-Thaharah</p>
+                <span>— ✤ —</span>
+            </div>
+        </section>
+    </main>
+
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAbout()">&times;</span>
+            <h2>About the Developer</h2>
+            <div class="profile-card">
+                <div class="profile-avatar">R</div>
+                <h3>rslsyyf</h3>
+                <p class="role">Web Developer & Digital Artist</p>
+                <p class="desc">
+                    Dedicated to bridging the gap between classical Islamic heritage and modern digital aesthetics. 
+                    This project aims to provide a serene, focused environment for students of Fiqh.
+                </p>
+                <div class="tech-stack">
+                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Fiqh</span>
+                </div>
+                <p class="copyright">© 2025 rslsyyf. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
